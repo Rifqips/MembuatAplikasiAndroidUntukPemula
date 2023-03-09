@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/ivBarangBekas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background"
         android:adjustViewBounds="true"
@@ -52,8 +52,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Subtitle"
             android:textColor="@color/black" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUserNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+6283838383"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBarangBekas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

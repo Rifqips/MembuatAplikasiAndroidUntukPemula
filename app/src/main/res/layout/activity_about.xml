@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".view.about.AboutActivity">
 
-
-
     <Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -46,7 +44,9 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="end"
-        android:src="@drawable/ic_picture_empty"
+        android:src="@drawable/tim3"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

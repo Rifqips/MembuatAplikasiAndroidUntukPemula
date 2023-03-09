@@ -27,6 +27,7 @@ class AdapterBarangBekas(private var barkas : ArrayList<BarangBekas>): RecyclerV
         holder.binding.tvTitle.text = barkas[position].title
         holder.binding.tvSubTitle.text = barkas[position].subTitle
         holder.binding.tvDate.text = barkas[position].date
+        holder.binding.tvUserNumber.text = barkas[position].number
 
         holder.binding.content.setOnClickListener {
             val intent = Intent(it.context, DetilActivity::class.java)
@@ -34,6 +35,7 @@ class AdapterBarangBekas(private var barkas : ArrayList<BarangBekas>): RecyclerV
             intent.putExtra("title", barkas[position].title)
             intent.putExtra("date", barkas[position].date)
             intent.putExtra("subtitle", barkas[position].subTitle)
+            intent.putExtra("number", barkas[position].number)
             it.context.startActivity(intent)
 
         }

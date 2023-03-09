@@ -58,6 +58,22 @@ object BarkasSingleton {
         "10/10/2023",
     )
 
+
+
+
+    private val number = arrayOf(
+        "+6212349295592",
+        "+6284127474747",
+        "+6287758493939",
+        "+6285243214214",
+        "+6285683837318",
+        "+6281234939382",
+        "+6292838282929",
+        "+6288272728928",
+        "+6285788292920",
+        "+6285828290192",
+    )
+
     val listProduk: ArrayList<BarangBekas>
     get() {
         val list = arrayListOf<BarangBekas>()
@@ -67,6 +83,7 @@ object BarkasSingleton {
             barkas.title = title[position]
             barkas.subTitle = subTitle[position]
             barkas.date = date[position]
+            barkas.number = number[position]
             list.add(barkas)
 
         }

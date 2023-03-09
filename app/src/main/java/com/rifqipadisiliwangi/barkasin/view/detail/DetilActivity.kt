@@ -27,10 +27,12 @@ class DetilActivity : AppCompatActivity() {
         val title = item?.getStringExtra("title")
         val date = item?.getStringExtra("date")
         val subTitle = item?.getStringExtra("subtitle")
+        val number = item?.getStringExtra("number")
 
         _binding.ivBarangBekas.setImageResource(gambar)
         _binding.tvTitle.text = title
         _binding.tvDate.text = date
         _binding.tvSubTitle.text = subTitle
+        _binding.tvUserNumber.text = number
     }
 }
